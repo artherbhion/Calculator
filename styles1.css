@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #040404; /* Darker background to tone down the brightness */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Calculator{
+    background-color: #222222; /* Dark but slightly lighter than the container */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5); /* Softer glow */
+    border: 3px solid #33cccc; /* Muted neon cyan */
+}
+.Calculator form input{
+    border: 0;
+    outline: 0;
+    width: 75px;
+    height: 75px;
+    border-radius: 15px;
+    background: #232323; /* Dark background for buttons */
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5), 0 0 20px rgba(0, 255, 255, 0.3); /* Softer neon glow */
+    text-shadow: 0 0 5px #33cccc, 0 0 10px #33cccc; /* Softer text glow */
+}
+.Calculator form input:hover{
+    transform: scale(1.1);
+    background: #33cccc; /* Muted neon cyan on hover */
+    color: #000;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.6), 0 0 35px rgba(0, 255, 255, 0.4); /* Slightly brighter on hover */
+}
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+form .display input{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    background-color: #000000; /* Darker display */
+    color: #33cccc; /* Muted neon cyan text */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 8px #33cccc, 0 0 10px rgba(0, 255, 255, 0.3); /* Softer glow */
+    text-shadow: 0 0 8px #33cccc;
+}
+form input.equal{
+    width: 165px;
+    background: #cc33ff; /* Muted neon purple for the equal button */
+    color: #fff;
+    box-shadow: 0 0 15px rgba(204, 51, 255, 0.6), 0 0 30px rgba(204, 51, 255, 0.3); /* Softer purple glow */
+    text-shadow: 0 0 8px #cc33ff;
+}
+form input.operator{
+    background: #66ff66; /* Muted neon green */
+    color: #fff;
+    box-shadow: 0 0 15px rgba(102, 255, 102, 0.6), 0 0 30px rgba(102, 255, 102, 0.3); /* Softer green glow */
+    text-shadow: 0 0 8px #66ff66;
+}
